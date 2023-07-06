@@ -7,7 +7,7 @@ cL = [100, 0, 0, 0]                     #definimos la lista de la poblacion
 averageList = [100, 0, 0, 0]            #definimos la lista con la poblacion en su estado inicial donde guardaremos las entradas
 for i in range (30):                    #le decimos cuantas veces hara la simulacion
     if(cL[0] == 0):                     #los if, elif y else en este rango son condiciones de la poblacion
-        x = np.random.choice([1, 2, 3, 4], 30, p = [0.63, 0.17, 0.13, 0.07])
+        x = np.random.choice([1, 2, 3, 4], 30, p = [0.63, 0.17, 0.13, 0.07])	
         for element in x:               #aqui asignamos las probabilidades del evento para un for de 30
             if((element == 2) and (cL[1] != 0)):
                 cL[1] = cL[1] - 1
